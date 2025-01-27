@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-# ****THIS IS A SIMPLE SCRIPT TO MONITOR THE FREE RAM****
+# ****Script checks available RAM and sends an alert if memory is below the threshold of 500 MB****
 
 
 FREE_SPACE=$(free -mt | grep "Total" | awk '{print $4}')
